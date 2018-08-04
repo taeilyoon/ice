@@ -3,8 +3,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".BasedFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="44dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text=""
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/nextButton"
+            android:layout_width="105dp"
+            android:layout_height="64dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginEnd="40dp"
+            android:elevation="10dp"
+            app:fb_defaultColor="@color/colorPrimaryDark"
+            app:fb_focusColor="@color/colorPrimaryDark"
+            app:fb_radius="12dp"
+
+            app:fb_text=""
+            app:fb_textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        </mehdi.sakout.fancybuttons.FancyButton>
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/jj"
+            android:layout_width="105dp"
+            android:layout_height="64dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginStart="40dp"
+            android:elevation="10dp"
+            app:fb_defaultColor="@color/colorPrimaryDark"
+
+            app:fb_focusColor="@color/colorPrimaryDark"
+            app:fb_radius="12dp"
+            app:fb_text=""
+            app:fb_textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </mehdi.sakout.fancybuttons.FancyButton>
+    </android.support.constraint.ConstraintLayout>
 
 </FrameLayout>

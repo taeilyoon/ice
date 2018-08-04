@@ -31,6 +31,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     compile 'devlight.io:navigationtabbar:1.2.5'
 
+    compile 'com.github.medyo:fancybuttons:1.8.4'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
