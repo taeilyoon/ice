@@ -1,6 +1,7 @@
 package com.tqeil.ice
 
 import android.content.Context
+import android.content.Intent
 import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -22,9 +23,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreateView(parent: View?, name: String?, context: Context?, attrs: AttributeSet?): View {
         return super.onCreateView(parent, name, context, attrs)
-
+        var intent = Intent(context,LoginActivity::class.java)
 
     }
+
 
 
 }
