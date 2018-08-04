@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        var intent = Intent(this, RecycleActivity::class.java)
+        startActivity(intent);
     }
 
 
