@@ -21,12 +21,5 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    override fun onCreateView(parent: View?, name: String?, context: Context?, attrs: AttributeSet?): View {
-        return super.onCreateView(parent, name, context, attrs)
-        var intent = Intent(context,LoginActivity::class.java)
-
-    }
-
-
 
 }
